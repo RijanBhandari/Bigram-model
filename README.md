@@ -1,20 +1,17 @@
-# Twitter Sentiment Analysis
+# Bigram Abstract Generator
 
-A machine learning pipeline to classify tweets as **Positive** or **Negative** using the Sentiment140 dataset.
+A Natural Language Processing (NLP) tool that uses a **Bigram Language Model** to generate research paper abstracts based on a given title.
 
 ## 🛠️ Features
-* **Model:** Logistic Regression with TF-IDF Vectorization.
-* **Preprocessing:** NLTK-based cleaning (stemming, stop-word removal, URL/HTML stripping).
-* **Performance:** ~79% accuracy on 1.6 million tweets.
-* **Interactive:** Includes a helper function to test custom tweet inputs.
+* **N-Gram Modeling:** Implements a bigram probability distribution using `nltk`.
+* **Preprocessing:** Automated tokenization and lowercase normalization of training data.
+* **Abstract Generation:** Predicts subsequent tokens based on the last generated word to construct coherent text sequences.
+* **Custom Inputs:** Generate unique abstracts by providing any custom paper title.
 
 ## 🚀 Quick Start
 1. **Install Dependencies:**
-   ```bash
-   pip install pandas numpy seaborn matplotlib nltk scikit-learn opendatasets
-   ```
-2. Run: Open Twitter_Sentiment_Analysis.ipynb in Jupyter or Google Colab.
-3. Data: Requires a Kaggle API key to download the Sentiment140 dataset.
+2. **Data Requirement:** Use the training_data_final.json.
+3. **Run:** Open Bigram model.ipynb and execute the cells to train the model and generate text.
 
-⚖️ License
+## ⚖️ License
 This project is dedicated to the public domain under the Creative Commons Zero v1.0 Universal (CC0 1.0). You can copy, modify, and distribute the work, even for commercial purposes, without asking permission.
